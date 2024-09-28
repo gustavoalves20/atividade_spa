@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Metas de Séries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Gerenciador de Metas de Séries</h1>
+        <form id="goalForm" class="mb-4">
+            <div class="form-group">
+                <input type="text" id="serieTittle" class="form-control" placeholder="Título da Série" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="totalEpisodes" class="form-control" placeholder="Total de Episódios" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="days" class="form-control" placeholder="Dias para Assistir" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Criar uma Meta</button>
+        </form>
+
+        <h2>Metas de Séries</h2>
+        <ul id="goalList" class="list-group"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
