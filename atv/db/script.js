@@ -10,12 +10,12 @@ goalForm.addEventListener('submit', function(event) {
     const totalEpisodes = document.getElementById('totalEpisodes').value.trim();
     const days = document.getElementById('days').value.trim();
 
-    // Verifica se a série já está na lista
+    
     const existingGoal = goals.find(goal => goal.title.toLowerCase() === serieTittle.toLowerCase());
     
     if (existingGoal) {
         alert('Esta série já foi adicionada!');
-        return; // Não adiciona a série se já existir
+        return; 
     }
 
     const goal = { title: serieTittle, episodes: totalEpisodes, days: days };
